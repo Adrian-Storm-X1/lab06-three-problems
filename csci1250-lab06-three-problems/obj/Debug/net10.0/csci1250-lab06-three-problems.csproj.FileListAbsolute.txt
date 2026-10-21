@@ -1,0 +1,14 @@
+C:\Users\adria\OneDrive\Documents\CSCI1250\lab06-three-problems\csci1250-lab06-three-problems\bin\Debug\net10.0\csci1250-lab06-three-problems.exe
+C:\Users\adria\OneDrive\Documents\CSCI1250\lab06-three-problems\csci1250-lab06-three-problems\bin\Debug\net10.0\csci1250-lab06-three-problems.deps.json
+C:\Users\adria\OneDrive\Documents\CSCI1250\lab06-three-problems\csci1250-lab06-three-problems\bin\Debug\net10.0\csci1250-lab06-three-problems.runtimeconfig.json
+C:\Users\adria\OneDrive\Documents\CSCI1250\lab06-three-problems\csci1250-lab06-three-problems\bin\Debug\net10.0\csci1250-lab06-three-problems.dll
+C:\Users\adria\OneDrive\Documents\CSCI1250\lab06-three-problems\csci1250-lab06-three-problems\bin\Debug\net10.0\csci1250-lab06-three-problems.pdb
+C:\Users\adria\OneDrive\Documents\CSCI1250\lab06-three-problems\csci1250-lab06-three-problems\obj\Debug\net10.0\csci1250-lab06-three-problems.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\adria\OneDrive\Documents\CSCI1250\lab06-three-problems\csci1250-lab06-three-problems\obj\Debug\net10.0\csci1250-lab06-three-problems.AssemblyInfoInputs.cache
+C:\Users\adria\OneDrive\Documents\CSCI1250\lab06-three-problems\csci1250-lab06-three-problems\obj\Debug\net10.0\csci1250-lab06-three-problems.AssemblyInfo.cs
+C:\Users\adria\OneDrive\Documents\CSCI1250\lab06-three-problems\csci1250-lab06-three-problems\obj\Debug\net10.0\csci1250-lab06-three-problems.csproj.CoreCompileInputs.cache
+C:\Users\adria\OneDrive\Documents\CSCI1250\lab06-three-problems\csci1250-lab06-three-problems\obj\Debug\net10.0\csci1250-lab06-three-problems.dll
+C:\Users\adria\OneDrive\Documents\CSCI1250\lab06-three-problems\csci1250-lab06-three-problems\obj\Debug\net10.0\refint\csci1250-lab06-three-problems.dll
+C:\Users\adria\OneDrive\Documents\CSCI1250\lab06-three-problems\csci1250-lab06-three-problems\obj\Debug\net10.0\csci1250-lab06-three-problems.pdb
+C:\Users\adria\OneDrive\Documents\CSCI1250\lab06-three-problems\csci1250-lab06-three-problems\obj\Debug\net10.0\csci1250-lab06-three-problems.genruntimeconfig.cache
+C:\Users\adria\OneDrive\Documents\CSCI1250\lab06-three-problems\csci1250-lab06-three-problems\obj\Debug\net10.0\ref\csci1250-lab06-three-problems.dll
