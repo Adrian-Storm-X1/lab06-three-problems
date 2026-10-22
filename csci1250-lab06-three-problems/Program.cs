@@ -10,9 +10,10 @@
 
 
 
-using System.Runtime.InteropServices;
 
-int choice = 0; 
+// int choice = 0; 
+// Random rng = new Random();
+
 
 //do{
 
@@ -45,35 +46,69 @@ int choice = 0;
 //     {
 //         Console.WriteLine(score + " earns an F.");
 //     }
-//     if (score >= 60 && score < 70)
+//     else if (score >= 60 && score < 70)
 //     {
 //         Console.WriteLine(score + " earns an D.");
 //     }
-//     if (score >= 70 && score < 80)
+//     else if (score >= 70 && score < 80)
 //     {
 //         Console.WriteLine(score + " earns an C.");
 //     }  
-//     if (score >= 80 && score < 90)
+//     else if (score >= 80 && score < 90)
 //     {
 //         Console.WriteLine(score + " earns an B.");
 //     }  
-//     if (score >= 90 && score < 100)
+//     else if (score >= 90 && score < 100)
 //     {
 //         Console.WriteLine(score + " earns an A.");
 //     }
 // }
 
 
-if (choice == 2 || choice == 4)
-{
-    Console.WriteLine("");
+// if (choice == 2 || choice == 4)
+// {
+    
+//     int counter = 1;
+//     int wins = 0;
+//     string Result = "";
 
+//     Console.WriteLine("=== Excercise 2: The Dice Table ===");
+//     while(true)
+//     {
+//         int diceOne = rng.Next(1,7);
+//         int diceTwo = rng.Next(1,7); 
+//         int diceTotal = diceOne + diceTwo;
+//         int winner = diceOne + diceTwo;
+//         counter = counter + 1;
+//         if (diceOne == 1 && diceTwo == 1)
+//         {
+//             Result = "Snake Eyes.";
+//         }
+//         else if (diceOne == diceTwo)
+//         {
+//             Result = "Doubles!"; 
+//         }
+//         else if (winner == 7 || winner == 11)
+//         {
+//             Result = "A Winner.";
+//             wins = wins + 1;
+//         }
+//         else
+//         {
+//             Result = "";
+//         }
 
-
-
-
-
-}
+//         Console.WriteLine("Roll " + counter + ": " + diceOne + " and " + diceTwo + ", total " + diceTotal + ". " + Result);
+//         Console.Write("Roll Again? (y/n) : ");
+//         string? keepGoing = Console.ReadLine();
+//         if (keepGoing == "n")
+//         {
+//             Console.WriteLine("You rolled " + counter + " times and won " + wins + ".");
+//             break;
+//         }
+        
+//     }
+// }
 
 
 
