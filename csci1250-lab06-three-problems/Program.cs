@@ -11,115 +11,178 @@
 
 
 
-// int choice = 0; 
-// Random rng = new Random();
-
-
-//do{
+int choice = 0; 
+Random rng = new Random();
 
 
 
-//  Console.WriteLine("=== CSCI 1250 Lab 06 ===");   
-//  Console.WriteLine("1. The Grade Checker ");   
-//  Console.WriteLine("2. The Dice Table");   
-//  Console.WriteLine("3. The Score Report");   
-//  Console.WriteLine("4. All Three ");   
-//  Console.WriteLine("5. Quit");   
-//  Console.WriteLine("Choose 1 through 5: ");
 
-
-//The Grade Checker.
-// if (choice == 1 || choice == 4)
-// {
-//     Console.WriteLine("=== The Grade Checker ===");
-//     Console.Write("Score: ");
-//     int score = Convert.ToInt32(Console.ReadLine());
-//     // Had to make the While loop seperate from the statements to ensure a proper number is recieved. 
-//     while(score < 0 || score > 100)
-//     {
-//         Console.WriteLine("A score must be between 0 and 100");
-//         Console.Write("Score: ");
-//         score = Convert.ToInt32(Console.ReadLine());
-//     }
-//     // This is what actually checks the grade. 
-//     if (score < 60)
-//     {
-//         Console.WriteLine(score + " earns an F.");
-//     }
-//     else if (score >= 60 && score < 70)
-//     {
-//         Console.WriteLine(score + " earns an D.");
-//     }
-//     else if (score >= 70 && score < 80)
-//     {
-//         Console.WriteLine(score + " earns an C.");
-//     }  
-//     else if (score >= 80 && score < 90)
-//     {
-//         Console.WriteLine(score + " earns an B.");
-//     }  
-//     else if (score >= 90 && score < 100)
-//     {
-//         Console.WriteLine(score + " earns an A.");
-//     }
-// }
-
-
-// if (choice == 2 || choice == 4)
-// {
     
-//     int counter = 1;
-//     int wins = 0;
-//     string Result = "";
 
-//     Console.WriteLine("=== Excercise 2: The Dice Table ===");
-//     while(true)
-//     {
-//         int diceOne = rng.Next(1,7);
-//         int diceTwo = rng.Next(1,7); 
-//         int diceTotal = diceOne + diceTwo;
-//         int winner = diceOne + diceTwo;
-//         counter = counter + 1;
-//         if (diceOne == 1 && diceTwo == 1)
-//         {
-//             Result = "Snake Eyes.";
-//         }
-//         else if (diceOne == diceTwo)
-//         {
-//             Result = "Doubles!"; 
-//         }
-//         else if (winner == 7 || winner == 11)
-//         {
-//             Result = "A Winner.";
-//             wins = wins + 1;
-//         }
-//         else
-//         {
-//             Result = "";
-//         }
-
-//         Console.WriteLine("Roll " + counter + ": " + diceOne + " and " + diceTwo + ", total " + diceTotal + ". " + Result);
-//         Console.Write("Roll Again? (y/n) : ");
-//         string? keepGoing = Console.ReadLine();
-//         if (keepGoing == "n")
-//         {
-//             Console.WriteLine("You rolled " + counter + " times and won " + wins + ".");
-//             break;
-//         }
-        
-//     }
-// }
+    //The Introduction
 
 
 
+do
+{
+    Console.WriteLine("");
+    Console.WriteLine("=== CSCI 1250 Lab 06 ===");   
+    Console.WriteLine("1. The Grade Checker ");   
+    Console.WriteLine("2. The Dice Table");   
+    Console.WriteLine("3. The Score Report");   
+    Console.WriteLine("4. All Three ");   
+    Console.WriteLine("5. Quit");   
+    Console.Write("Choose 1 through 5: ");
+    choice = Convert.ToInt32(Console.ReadLine());
+    while(choice > 5 || choice < 1)
+    {
+        Console.WriteLine("Choose a number from 1 to 5.");
+        Console.Write("Choose 1 through 5: ");
+        choice = Convert.ToInt32(Console.ReadLine());
+    }
+
+    Console.WriteLine("");
+
+
+    //The Grade Checker.
+    if (choice == 1 || choice == 4)
+    {
+        Console.WriteLine("");
+        Console.WriteLine("=== The Grade Checker ===");
+        Console.Write("Score: ");
+        int scorePartOne = Convert.ToInt32(Console.ReadLine());
+        // Had to make the While loop seperate from the statements to ensure a proper number is recieved. 
+        while(scorePartOne < 0 || scorePartOne > 100)
+        {
+            Console.WriteLine("A score must be between 0 and 100");
+            Console.Write("Score: ");
+            scorePartOne = Convert.ToInt32(Console.ReadLine());
+        }
+        // This is what actually checks the grade. 
+        if (scorePartOne < 60)
+        {
+            Console.WriteLine(scorePartOne + " earns an F.");
+        }
+        else if (scorePartOne >= 60 && scorePartOne < 70)
+        {
+            Console.WriteLine(scorePartOne + " earns an D.");
+        }
+        else if (scorePartOne >= 70 && scorePartOne < 80)
+        {
+            Console.WriteLine(scorePartOne + " earns an C.");
+        }  
+        else if (scorePartOne >= 80 && scorePartOne < 90)
+        {
+            Console.WriteLine(scorePartOne + " earns an B.");
+        }  
+        else if (scorePartOne >= 90 && scorePartOne < 100)
+        {
+            Console.WriteLine(scorePartOne + " earns an A.");
+        }
+    }
+
+
+    //This is the Dice Table
+    if (choice == 2 || choice == 4)
+    {
+        Console.WriteLine("");
+
+        int counter = 0;
+        int wins = 0;
+        string Result = "";
+
+        Console.WriteLine("=== Excercise 2: The Dice Table ===");
+        while(true)
+        {
+            int diceOne = rng.Next(1,7);
+            int diceTwo = rng.Next(1,7); 
+            int diceTotal = diceOne + diceTwo;
+            int winner = diceOne + diceTwo;
+            counter = counter + 1;
+            if (diceOne == 1 && diceTwo == 1)
+            {
+                Result = "Snake Eyes.";
+            }
+            else if (diceOne == diceTwo)
+            {
+                Result = "Doubles!"; 
+            }
+            else if (winner == 7 || winner == 11)
+            {
+                Result = "A Winner.";
+                wins = wins + 1;
+            }
+            else
+            {
+                Result = "";
+            }
+
+            Console.WriteLine("Roll " + counter + ": " + diceOne + " and " + diceTwo + ", total " + diceTotal + ". " + Result);
+            Console.Write("Roll Again? (y/n) : ");
+            string? keepGoing = Console.ReadLine();
+            if (keepGoing == "n")
+            {
+                Console.WriteLine("You rolled " + counter + " times and won " + wins + ".");
+                break;
+            }
+
+        }
+    }
+
+
+
+    //This is the score report
+    if  (choice == 3 || choice == 4)
+    {
+        Console.WriteLine("");
+        Console.WriteLine("=== Excersice 3: The Score Report ===");
+        int[] scores = new int[5];
+        int countAmount = 0;
+        int passingScore = 0;
+        double total = 0;
+        int high = int.MinValue;
 
 
 
 
+        for (int i = 0; i < 5; i++)
+        {
+            countAmount = countAmount + 1;
+            Console.Write("Score " + countAmount + ": " );
+            scores[i] = int.Parse(Console.ReadLine());
+        }
 
 
+        foreach (int score in scores)
+        {
+            total += score;
+
+            if (score > high)
+            {
+                high = score;
+            }
+
+            if (score >= 60)
+            {
+                passingScore = passingScore + 1;
+            }
+
+    
+        }
+        double average = total / scores.Length;
+
+        Console.WriteLine("");
+        Console.WriteLine("Scores entered: " + scores.Length);
+        Console.WriteLine("Total: " + total);
+        Console.WriteLine("Average: " + average);
+        Console.WriteLine("Highest: " + high);
+        Console.WriteLine("Passing: " + passingScore + " of " + scores.Length);
+    }
 
 
+    
 
+}while(choice != 5);
 
-//}while(choice != 5);
+Console.WriteLine("");
+Console.WriteLine("Goodbye.");
