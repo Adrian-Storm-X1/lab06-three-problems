@@ -19,12 +19,12 @@ Random rng = new Random();
 
     
 
-    //The Introduction
-
+    
 
 
 do
 {
+//The Introduction
     Console.WriteLine("");
     Console.WriteLine("=== CSCI 1250 Lab 06 ===");   
     Console.WriteLine("1. The Grade Checker ");   
@@ -34,6 +34,7 @@ do
     Console.WriteLine("5. Quit");   
     Console.Write("Choose 1 through 5: ");
     choice = Convert.ToInt32(Console.ReadLine());
+//This makes sure the desired value is achieved.
     while(choice > 5 || choice < 1)
     {
         Console.WriteLine("Choose a number from 1 to 5.");
@@ -92,6 +93,7 @@ do
         string Result = "";
 
         Console.WriteLine("=== Excercise 2: The Dice Table ===");
+    //The game does not keep going on indefinitely if any other loop is used
         while(true)
         {
             int diceOne = rng.Next(1,7);
@@ -144,15 +146,15 @@ do
 
 
 
-
-        for (int i = 0; i < 5; i++)
+        //a standard for loop is used to ensure that the score length is what is being met
+        for (int i = 0; i < scores.Length; i++)
         {
             countAmount = countAmount + 1;
             Console.Write("Score " + countAmount + ": " );
             scores[i] = int.Parse(Console.ReadLine());
         }
 
-
+        // this loop takes full advantage of the array being the list that is actually read.
         foreach (int score in scores)
         {
             total += score;
